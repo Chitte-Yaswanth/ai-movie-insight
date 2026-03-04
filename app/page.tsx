@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Home() {
 
   const [movieId, setMovieId] = useState("");
-  const [movie, setMovie] = useState(null);
+  const [movie, setMovie] = useState<any>(null);
 
   const searchMovie = async () => {
 
