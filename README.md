@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Movie Insight Builder 🎬
 
-## Getting Started
+AI Movie Insight Builder is a web application that allows users to enter an IMDb movie ID and view detailed information about the movie along with AI-based sentiment insights.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Search movies using IMDb ID
+* Display movie title, poster, release year, and IMDb rating
+* Show cast list and plot summary
+* Perform sentiment analysis on the movie plot
+* Classify sentiment as **Positive**, **Mixed**, or **Negative**
+* Clean and responsive UI
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Frontend:** Next.js (React)
+* **Backend:** Next.js API Routes
+* **API:** OMDb API
+* **Sentiment Analysis:** sentiment npm library
+* **Deployment:** Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How It Works
 
-## Learn More
+1. The user enters an IMDb movie ID (example: `tt0133093`).
+2. The application fetches movie details from the OMDb API.
+3. The movie plot is analyzed using a sentiment analysis library.
+4. The sentiment score is used to classify the movie sentiment as Positive, Mixed, or Negative.
+5. The results are displayed in a clean interface.
 
-To learn more about Next.js, take a look at the following resources:
+## Example IMDb IDs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can test the application with:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* `tt0133093` — The Matrix
+* `tt0111161` — The Shawshank Redemption
+* `tt1375666` — Inception
 
-## Deploy on Vercel
+## Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://ai-movie-insight.vercel.app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## GitHub Repository
+
+https://github.com/Chitte-Yaswanth/ai-movie-insight
+
+## Author
+
+Chitte Yaswanth
+B.Tech – Computer Science Engineering
+Alliance University
